@@ -72,4 +72,58 @@ const multiplyES6 = (x, y) => { return x * y };
 const multiplyES6 = (x, y) => x * y;
 ```
 
-    
+
+### 5. primitive vs. reference types
+
+<!-- table to introduction those two  -->
+ 
+| Primitive Types | Reference Types |
+|-----------------|-----------------|
+| Primitive types are stored in the stack. | Reference types are stored in the heap. |
+| Primitive types are copied by their value. | Reference types are copied by their reference. |
+| Primitive types are independent. | Reference types are dependent. |
+| Primitive types are fixed in size. | Reference types are dynamic in size. |
+| Primitive types are fast to access. | Reference types are slower to access. |
+| Primitive types are destroyed automatically. | Reference types are destroyed by garbage collector. |
+| Primitive types are Boolean, Null, Undefined, Number, String, Symbol. | Reference types are Object, Array, Function. |
+| Primitive types are immutable. | Reference types are mutable. |
+| Primitive types are passed by value. | Reference types are passed by reference. |
+| Primitive types are not changeable. | Reference types are changeable. |
+| Primitive types are stored in the stack. | Reference types are stored in the heap. |
+| Primitive types are copied by their value. | Reference types are copied by their reference. |
+| Primitive types are independent. | Reference types are dependent. |
+| Primitive types are fixed in size. | Reference types are dynamic in size. |
+| Primitive types are fast to access. | Reference types are slower to access. |
+| Primitive types are destroyed automatically. | Reference types are destroyed by garbage collector. |
+| Primitive types are Boolean, Null, Undefined, Number, String, Symbol. | Reference types are Object, Array, Function. |
+| Primitive types are immutable. | Reference types are mutable. |
+| Primitive types are passed by value. | Reference types are passed by reference. |
+| Primitive types are not changeable. | Reference types are changeable. |
+| Primitive types are stored in the stack. | Reference types are stored in the heap. |
+| Primitive types are copied by their value. | Reference types are copied by their reference. |
+| Primitive types are independent. | Reference types are dependent. |
+| Primitive types are fixed in size. | Reference types are dynamic in size. |
+
+
+```javascript
+
+// Primitive Types
+let x = 10;
+let y = x;
+
+
+x = 20;
+console.log(x); // 20
+console.log(y); // 10
+
+// Reference Types
+let x = { value: 10 };
+let y = x;
+
+x.value = 20;
+console.log(x); // { value: 20 }
+console.log(y); // { value: 20 }
+
+```
+
+### 7. Destructuring
