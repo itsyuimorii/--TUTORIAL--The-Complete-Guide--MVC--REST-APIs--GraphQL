@@ -1,5 +1,5 @@
 <div align=center>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png">
+    <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*l2tlJsFNg2tH6QizegKkqA.png">
     <h1> NodeJS - The Complete Guide (MVC, REST APIs, React, GraphQL, Deno)
  </h1>
 </div>
