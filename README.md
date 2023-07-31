@@ -37,14 +37,13 @@ NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)
 |Section 14 | Advanced Authentication  | [code]()|
 |Section 15 | Understanding Validation  | [code]()|
 |Section 16 | Error Handling  | [code]()|
-|Section 17 | File Upload & Download  | [code]()|
+|Section 17 | File Upload & Download  | [code]()||
 
-|Section 18 | Understanding Async Requests  | [code]()|
-|Section 19 | Adding Payments  | [code]()|
-|Section 20 | Working with REST APIs - The Basics  | [code]()|
-|Section 21 | Working with REST APIs - The Practical Application  | [code]()|
-|Section 22 | Working with GraphQL API - The Basics  | [code]()|
-|Section 23 | Working with GraphQL API - The Practical Application  | [code]()|
+
+
+
+
+
 <div align="left">
 
 
