@@ -32,7 +32,7 @@
 | const is not redeclared. | let is redeclared. |
 | const is not reinitialized. | let is reinitialized. |
 | const is not temporal dead zone. | let is temporal dead zone. |
- 
+
 
 
 
@@ -75,8 +75,8 @@ const multiplyES6 = (x, y) => x * y;
 
 ### 5. primitive vs. reference types
 
-<!-- table to introduction those two  -->
- 
+
+
 | Primitive Types | Reference Types |
 |-----------------|-----------------|
 | Primitive types are stored in the stack. | Reference types are stored in the heap. |
@@ -125,5 +125,26 @@ console.log(x); // { value: 20 }
 console.log(y); // { value: 20 }
 
 ```
+### 6. Rest and Spread Operators
+- The rest parameter syntax allows us to represent an indefinite number of arguments as an array.
+- The spread operator allows us to expand elements. It is commonly used to make shallow copies of JS objects.
+
+```javascript
+// Rest Operator
+
+function sum(...args) {
+  return args.reduce((a, b) => a + b);
+}
+```
+
+```javascript
+// Spread Operator
+
+const arr = [1, 2, 3];
+const arr2 = [...arr, 4]; // [1, 2, 3, 4]
+
+
+```
 
 ### 7. Destructuring
+- Destructuring is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
