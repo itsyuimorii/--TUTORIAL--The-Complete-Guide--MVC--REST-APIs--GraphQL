@@ -34,9 +34,6 @@
 | const is not temporal dead zone. | let is temporal dead zone. |
 
 
-
-
-
 ```javascript
 // const
 const myName = 'Max';

@@ -8,12 +8,14 @@
 
 ## Program Lifecycle & Event Loop
 
-* Node.js is a JS runtime environment
+* Node.js is a JS runtime environment,`node -v` to check the version
 
 * Node.js runs non-blocking JS code  and uses an event-driven code (“Event Loop”) for running your logic
-* A Node program exists as soon as there is no more work to do
+* A Node program exists as soon as there is no more work to do, `process.exit()` can be used to exit the process explicitly.
 
-* Node.js is single-threaded (but uses multiple threads under the hood)
+* Node.js is single-threaded (but uses multiple threads under the hood), `process.env.UV_THREADPOOL_SIZE` to check the number of threads
+  
+
 * Note: The createServer() event never finishes by default
 
 ## Asynchronous Code
@@ -22,6 +24,20 @@
 * User callbacks and events => Order changes!
 
 ## Request & Responses
+
+```javascript
+const server = http.createServer((req, res) => {
+  console.log(req.url, req.method, req.headers);
+  // process.exit();
+  res.setHeader('Content-Type', 'text/html');
+  res.write('<html>');
+  res.write('<head><title>My First Page</title></head>');
+  res.write('<body><h1>Hello from my Node.js Server!</h1></body>');
+  res.write('</html>');
+  res.end();
+});
+```
+[HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
 
 * Parse request data in chunks (Streams & Buffers)
 * Avoid “double responses”
