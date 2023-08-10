@@ -26,11 +26,11 @@ const requestHandler = (req, res) => {
       const parsedBody = Buffer.concat(body).toString()
       const message = parsedBody.split('=')[1]
       fs.writeFileSync('message.txt', message)
+      res.statusCode = 302; // 302 is a redirection status code
+      res.setHeader('Location', '/');
+      return res.end(); // return to exit the function
     })
     
-    res.statusCode = 302; // 302 is a redirection status code
-    res.setHeader('Location', '/');
-    return res.end(); // return to exit the function
   }
   res.setHeader('Content-Type', 'text/html')
   res.write('<html>')
