@@ -19,7 +19,9 @@ const requestHandler = (req, res) => {
   if (url === '/message' && method === 'POST') {
  
     fs.writeFile('message.text', 'Dummy',err=>{
-      res. statusCode = 302;
+      res. statusCode = 302,{}; // 302 is a redirection status code
+      res.setHeader('Location', '/');
+      return res.end(); 
     })
   }
   res.setHeader('Content-Type', 'text/html')
